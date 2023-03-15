@@ -1,13 +1,16 @@
 package com.digitalinovationone;
 
 public class No {
-    private int dado;
-    private No reNo = null;
 
-    //construtor do dado
+    //variáveis da classe No : int "dado" e No "refNo"
+    private int dado;
+    private No refNo = null;
+
+    //construtor da variável "dado"
     public No(int dado) {
         this.dado = dado;
     }
+
     //construtor vazio
     public No() {
     }
@@ -27,10 +30,10 @@ public class No {
     }
 
     public void setRefNo(No refNo) {
-        this.reNo = refNo;
+        this.refNo = refNo;
     }
 
-    //toString() do dado
+    //toString() para variável "dado"
 
 
     @Override

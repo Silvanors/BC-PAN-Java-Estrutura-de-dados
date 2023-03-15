@@ -5,9 +5,8 @@ public class Pilha {
     private No refNoEntradaPilha;
 
     //criar um construtor vazio
-    //depois atribuir "null" na variável refNoEntradaPilha
-
-    public Pilha() {
+        public Pilha() {
+            //depois atribuir "null" na variável refNoEntradaPilha
         this.refNoEntradaPilha = null;
     }
 
@@ -44,7 +43,4 @@ public class Pilha {
     return refNoEntradaPilha == null ? true : false;
 
     }
-
-
-
 }
