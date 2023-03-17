@@ -1,4 +1,4 @@
-package one.digitalinnovation;
+package one.digitalinnovation_refatoracao;
 
 //Classe Fila (FIFO: First In, First Out)
 public class Fila {
@@ -12,13 +12,16 @@ public class Fila {
     }
 
     //2º metodo é o enfileirar "enqueue"
-    public void enqueue(No novoNo) {
+
+    //public void enqueue(No novoNo) {
+    public void enqueue(Object obj) {
+        No novoNo = new No(obj);
         novoNo.setRefNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
     //4º metodo é o "dequeue" que responde quem é o primeiro da fila e o tira da fila
-    public No dequeue() {
+    public Object dequeue() {
         //primeira coisa aqui dentro é testar se a fila não está vazia
         if (!this.isEmpty()) {
             No primeiroNO = refNoEntradaFila;
@@ -35,13 +38,13 @@ public class Fila {
                 }
 
             }
-            return primeiroNO;
+            return primeiroNO.getObject();
         }
         return null;
     }
 
     //3º metodo é o "first" que responde quem é o primeiro da fila
-    public No first(){
+    public Object first(){
         //primeira coisa aqui dentro é testar se a fila não está vazia
         if(!this.isEmpty()){
             No primeiroNO = refNoEntradaFila;
@@ -55,7 +58,7 @@ public class Fila {
                 }
 
             }
-            return primeiroNO;
+            return primeiroNO.getObject();
         }
         return null;
 
