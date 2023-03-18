@@ -1,10 +1,11 @@
 package one.digitalinnovation_refatoracao;
 
 //Classe Fila (FIFO: First In, First Out)
-public class Fila {
+//refatorando a Classe Fila <T>
+public class Fila<T> {
 
     //implementar a referência de entrada na fila pelo final dela.
-    private No refNoEntradaFila;
+    private No<T> refNoEntradaFila;
 
     //construtor para instanciar a estrutura de dados Fila que ela seja nula (vazia)
     public Fila() {
@@ -14,14 +15,14 @@ public class Fila {
     //2º metodo é o enfileirar "enqueue"
 
     //public void enqueue(No novoNo) {
-    public void enqueue(Object obj) {
-        No novoNo = new No(obj);
+    public void enqueue(T object) {
+        No novoNo = new No(object);
         novoNo.setRefNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
     //4º metodo é o "dequeue" que responde quem é o primeiro da fila e o tira da fila
-    public Object dequeue() {
+    public T dequeue() {
         //primeira coisa aqui dentro é testar se a fila não está vazia
         if (!this.isEmpty()) {
             No primeiroNO = refNoEntradaFila;
@@ -38,13 +39,13 @@ public class Fila {
                 }
 
             }
-            return primeiroNO.getObject();
+            return (T) primeiroNO.getObject();
         }
         return null;
     }
 
     //3º metodo é o "first" que responde quem é o primeiro da fila
-    public Object first(){
+    public T first(){
         //primeira coisa aqui dentro é testar se a fila não está vazia
         if(!this.isEmpty()){
             No primeiroNO = refNoEntradaFila;
@@ -58,7 +59,7 @@ public class Fila {
                 }
 
             }
-            return primeiroNO.getObject();
+            return (T) primeiroNO.getObject();
         }
         return null;
 

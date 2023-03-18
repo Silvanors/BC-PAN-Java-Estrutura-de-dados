@@ -1,10 +1,11 @@
 package one.digitalinnovation_refatoracao;
 
-public class No {
+//refatorando o No com <T> usando generics
+public class No<T> {
 
     //Tipo Object LNI engloba todos os objetos do java herdam desse objeto, pode utilizar qualquer objeto
-    private Object object;
-    private No refNo;
+    private T object;
+    private No<T> refNo;
 
     //Construtor padrão abaixo
     public No(){
@@ -12,7 +13,7 @@ public class No {
 
     //Abaixo é o construtor recebendo o Object
     //O "object" é a parte útil ou conteúdo que será usado no nó
-    public No(Object object) {
+    public No(T object) {
         this.refNo = null;
         this.object = object;
     }
@@ -22,7 +23,7 @@ public class No {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
