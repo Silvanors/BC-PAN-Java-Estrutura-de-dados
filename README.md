@@ -2,6 +2,7 @@
 https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula1
 https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula2
 https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula3
+https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula4
 
 <h2> 📚 Conteúdo abordados</h2>
 
@@ -28,4 +29,10 @@ https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula3
 🔸 <strong> Refatoração para embutir o nó </strong><br>
 
 🔸 <strong> Refatoração para utilização de generics </strong><br>
+
+🔸 <strong> Implementação da Classe No para lista encadeada</strong><br>
+
+🔸 <strong> Implementação da Classe ListaEncadeada (Métodos: isEmpty(), size(), add(), getNo(), get(), remove(), toString())</strong><br>
+
+🔸 <strong> Utilização da Classe ListaEncadeada com seus métodos</strong><br>
 	 
