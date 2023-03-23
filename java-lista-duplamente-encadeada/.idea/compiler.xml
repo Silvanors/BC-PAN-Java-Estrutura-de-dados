@@ -6,10 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java-lista-duplamente-encadeada" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java-lista-encadeada" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

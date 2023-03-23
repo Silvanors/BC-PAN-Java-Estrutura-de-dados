@@ -1,8 +1,8 @@
 # BC-PAN-Java-Estrutura-de-dados
-https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula1
-https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula2
-https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula3
-https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula4
+https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula1<br>
+https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula2<br>
+https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula3<br>
+https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula4<br>
 
 <h2> 📚 Conteúdo abordados</h2>
 
