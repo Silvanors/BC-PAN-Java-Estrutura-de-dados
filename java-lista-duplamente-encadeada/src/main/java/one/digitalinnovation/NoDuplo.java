@@ -41,8 +41,9 @@ public class NoDuplo<T> {
     //3º) criar o método chamado toString do "conteudo" para imprimir o conteudo do nó
     @Override
     public String toString() {
-        return "NoDuplo{" +
+        return "NoDuplo_2{" +
                 "conteudo=" + conteudo +
                 '}';
     }
+
 }

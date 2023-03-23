@@ -14,7 +14,7 @@ public class ListaDuplamenteEncadeada<T> {
 
    //3º) criar o método get() para pegar o elemento tipo genérico no índice "n" que será passado
     public T get(int index){
-        return this.getNo(index).getConteudo();
+        return getNo(index).getConteudo();
     }
 
     //4º) criar o método add() recebe um "elemento" genérico
@@ -32,6 +32,53 @@ public class ListaDuplamenteEncadeada<T> {
         tamanhoLista++;
     }
 
+    //5º) criar a sobrecarga do método add() com add recebendo o "index" e o "elemento"
+    public void add(int index, T elemento){
+        NoDuplo<T> noAuxiliar = getNo(index);
+        NoDuplo<T> novoNo = new NoDuplo<>(elemento);
+        novoNo.setNoProximo(noAuxiliar);
+
+        if(novoNo.getNoProximo() != null){
+            novoNo.setNoPrevio(noAuxiliar.getNoPrevio());
+            novoNo.getNoProximo().setNoPrevio(novoNo);
+        }else{
+            novoNo.setNoPrevio(ultimoNo);
+            ultimoNo = novoNo;
+        }
+
+        if(index == 0) {
+            primeiroNo = novoNo;
+        }else{
+            novoNo.getNoPrevio().setNoProximo(novoNo);
+        }
+
+        tamanhoLista++;
+    }
+
+    //6º) criar o método remove() passando o "indice"
+    public void remove(int index){
+        //se indice igual a zero remove o nó abaixo
+        if(index == 0){
+            primeiroNo = primeiroNo.getNoProximo();
+            if(primeiroNo != null){
+                primeiroNo.setNoPrevio(null);
+            }
+        }else {
+            //se indice não for igual a zero
+            NoDuplo<T> noAuxiliar = getNo(index);
+            noAuxiliar.getNoPrevio().setNoProximo(noAuxiliar.getNoProximo());
+            if(noAuxiliar != ultimoNo){
+                noAuxiliar.getNoProximo().setNoPrevio(noAuxiliar.getNoPrevio());
+            }else{
+                ultimoNo = noAuxiliar;
+            }
+
+        }
+        this.tamanhoLista--;
+
+    }
+
+
     //2º) criar o método getNo()
     private NoDuplo<T> getNo(int index){
         NoDuplo<T> noAuxiliar = primeiroNo;
@@ -44,6 +91,21 @@ public class ListaDuplamenteEncadeada<T> {
 
     //1º) criar o método size()
     public int size(){
-        return this.tamanhoLista;
+        return tamanhoLista;
+    }
+
+    //7º) criar o método toString()
+    @Override
+    public String toString() {
+        String strRetorno = "";
+
+        NoDuplo<T> noAuxiliar = primeiroNo;
+        //for para correr a lista
+        for(int i = 0; i < size(); i++){
+            strRetorno += "[No{conteudo=" + noAuxiliar.getConteudo() + "}]--->";
+            noAuxiliar = noAuxiliar.getNoProximo();
+        }
+        strRetorno += "null";
+        return strRetorno;
     }
 }
