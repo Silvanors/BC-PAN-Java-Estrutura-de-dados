@@ -82,4 +82,38 @@ public class ArvoreBinaria<T extends Comparable<T>> {
         }
     }
 
+    //5º) criar o método remover(){} que receberá o "conteudo" a ser removido
+    public void remover(T conteudo){
+        try{
+            //Nós que irá auxiliar percorrer a árvore
+            BinNo<T> atual = this.raiz;
+            BinNo<T> pai = null;
+            BinNo<T> filho = null;
+            BinNo<T> temp = null;
+
+            //encontrar o nó onde está o "conteudo" passado
+            while (atual != null && !atual.getConteudo().equals(conteudo)){
+                pai = atual;
+
+                //testar se o "conteudo" passado é menor que o "conteudo" do nó do teste
+                if(conteudo.compareTo(atual.getConteudo()) <0){
+                    atual = atual.getNoEsq();
+                }else {
+                    atual = atual.getNoDir();
+                }
+            }
+
+            //rodou a árvore inteira no "while" e não concontrou o "conteudo"
+            if (atual == null) {
+                System.out.println("Conteudo não encontrado. Bloco Try");
+            }
+
+            //
+
+        }catch (NullPointerException erro){
+            System.out.println("Conteudo não encontrado. Bloco Catch");
+        }
+    }
+
+
 }
