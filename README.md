@@ -3,6 +3,7 @@ https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula1
 https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula2<br>
 https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula3<br>
 https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula4<br>
+https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula7<br>
 
 <h2> 📚 Conteúdo abordados</h2>
 
@@ -35,4 +36,6 @@ https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula4
 🔸 <strong> Implementação da Classe ListaEncadeada (Métodos: isEmpty(), size(), add(), getNo(), get(), remove(), toString())</strong><br>
 
 🔸 <strong> Utilização da Classe ListaEncadeada com seus métodos</strong><br>
+
+🔸 <strong> Implementação e Utilização da Classe ArvoresBinarias com seus métodos</strong><br>
 	 
