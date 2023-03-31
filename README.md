@@ -38,4 +38,6 @@ https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula7
 🔸 <strong> Utilização da Classe ListaEncadeada com seus métodos</strong><br>
 
 🔸 <strong> Implementação e Utilização da Classe ArvoresBinarias com seus métodos</strong><br>
+
+🔸 <strong> https://github.com/jrdutra/estruturaDeDadosJavaDio/tree/main/apresentacoes/Aula8 </strong><br>
 	 
